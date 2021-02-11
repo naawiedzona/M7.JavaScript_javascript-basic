@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+
+        // ejercicio 1 
+        console.log("Hola mundo!");
+
+        // ejercicio 2
+        alert("Me llamo Natalia Antonina Dzieciol");
+        // ejercicio 3
+        var myName = "Natalia";
+        var mySurname = "Dzieciol";
+
+        //ejercicio 4
+        var num1 = 10;
+        var num2 = 5;
+
+        var suma = num1 + num2;
+        console.log("La suma entre " + num1 + " i " + num2 + " es " + suma);
+        // ejercicio 5
+        var nota_examen = 4.6;
+
+        if (nota_examen > 5) {
+            alert("Has pasado el examen con un " + nota_examen);
+        }
+        else {
+            alert("Has suspendido el examen con un " + nota_examen);
+        }
+        // ejercicio 6
+        var frase1 = "Tinc un cotxe de color blau";
+
+
+        // cambio de blau a verd
+        console.log(frase1.replace("blau", "verd"));
+
+        // cambio de las letras
+        var letra = "o";
+        console.log(frase1.replace(new RegExp(letra, "g"), "u"));
+
+        //ejercicio 7
+
+        var muebles = ["taula", "cadira", "ordinador", "llibreta"];
+
+
+        for (let i = 0; i < muebles.length; i++) {
+            console.log(`L'objecte ${muebles[i]} está a la posició ${i}`);
+        }
+
+        // ejercicio 8
+
+        function calculadora(operador, valor1, valor2) {
+            if (operador == "suma") {
+                var resultat = valor1 + valor2;
+            }
+            else if (operador == "resta") {
+                var resultat = valor1 - valor2;
+            }
+            else if (operador == "multiplicacion") {
+                var resultat = valor1 * valor2;
+            }
+            else if (operador == "division") {
+                var resultat = valor1 / valor2;
+            }
+            console.log(resultat);
+        }
+
+        calculadora("suma", 10, 2);
+
+        calculadora("resta", 10, 5);
+        calculadora("multiplicacion", 10, 2);
+        calculadora("division", 10, 2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    <title>M7. JavaScript IT Academy</title>
+</head>
+
+<body>
+
+</body>
+
+</html>

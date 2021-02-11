@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  font-family: "Big Shoulders Display", cursive;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+.calculadora {
+  width: 420px;
+  background-image: linear-gradient(
+    to right,
+    rgb(25, 155, 148),
+    rgb(195, 195, 0)
+  );
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 4%;
+}
+.eraseButtons {
+  display: flex;
+}
+
+.borrar,
+.borrarUno {
+  width: 45%;
+  padding: 6px;
+  margin: 10px;
+  font-size: 1.3em;
+  background-color: #1c9c91;
+  border: 1px solid #8ccd4a;
+  border-radius: 6%;
+}
+
+.borrar:hover,
+.borrarUno:hover {
+  opacity: 0.7;
+}
+
+.resultado {
+  height: 100px;
+  background-color: rgb(251, 251, 251);
+  padding: 2px;
+  text-align: end;
+  font-size: 1.4em;
+  word-wrap: break-word;
+  word-break: break-all;
+  border-radius: 2%;
+  border: 1px solid #c0c302;
+}
+
+.resultado-prev {
+  text-align: end;
+  font-size: 1.4em;
+  min-height: 40px;
+  word-wrap: break-word;
+  word-break: break-all;
+  color: #8ccd4a;
+}
+.resultado-now {
+  text-align: end;
+  font-size: 2em;
+  color: #1c9c91;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.botones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.boton {
+  padding: 10px;
+  margin: 3px;
+  width: 22%;
+  font-size: 1.6em;
+  background-color: rgba(255, 255, 255, 0.596);
+  border: 1px solid #1c9c91;
+  border-radius: 6%;
+}
+
+.boton:hover {
+  opacity: 0.8;
+  border: 1px solid #8ccd4a;
+}
+
+.botonOperacion,
+#igual {
+  background-color: rgba(139, 204, 204, 0.424);
+}
